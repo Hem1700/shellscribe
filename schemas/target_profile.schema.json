@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TargetProfile",
+  "type": "object",
+  "properties": {
+    "type": {"type": "string"},
+    "inputs": {"type": "object"},
+    "scope": {"type": "object"},
+    "credentials": {"type": "object"}
+  },
+  "required": ["type", "inputs"]
+}

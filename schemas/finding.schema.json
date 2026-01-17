@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Finding",
+  "type": "object",
+  "properties": {
+    "id": {"type": "string"},
+    "title": {"type": "string"},
+    "severity": {"type": "string"},
+    "confidence": {"type": "string"},
+    "targets": {"type": "array"},
+    "evidence": {"type": "array"},
+    "provenance": {"type": "object"},
+    "timestamps": {"type": "object"},
+    "metadata": {"type": "object"}
+  },
+  "required": ["id", "title", "severity", "confidence", "evidence"]
+}

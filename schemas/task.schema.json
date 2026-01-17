@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TaskSpec",
+  "type": "object",
+  "properties": {
+    "module": {"type": "string"},
+    "objective": {"type": "string"},
+    "params": {"type": "object"},
+    "policy_context": {"type": "object"}
+  },
+  "required": ["module", "objective"]
+}

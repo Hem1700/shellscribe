@@ -1,0 +1,11 @@
+project:
+  name: "lab-run"
+policy:
+  offline: true
+  dry_run: true
+  allowlist:
+    - "lab_target"
+llm:
+  runtime: "llama_cpp"
+storage:
+  runs_dir: "runs/"

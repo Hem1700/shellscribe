@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Event",
+  "type": "object",
+  "properties": {
+    "type": {"type": "string"},
+    "timestamp": {"type": "string"},
+    "run_id": {"type": "string"},
+    "payload": {"type": "object"},
+    "provenance": {"type": "object"}
+  },
+  "required": ["type", "timestamp", "run_id", "payload"]
+}
