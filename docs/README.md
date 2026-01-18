@@ -6,3 +6,4 @@ Primary documents live at repo root:
 - `TODO.md`
 - `VERSIONING.md`
 - `THREAT_MODEL.md`
+- `GLOSSARY.md`
