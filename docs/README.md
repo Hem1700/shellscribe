@@ -7,3 +7,4 @@ Primary documents live at repo root:
 - `VERSIONING.md`
 - `THREAT_MODEL.md`
 - `GLOSSARY.md`
+- `PLUGIN_COMPATIBILITY.md`
