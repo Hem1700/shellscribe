@@ -5,3 +5,4 @@ Primary documents live at repo root:
 - `ARCHITECTURE.md`
 - `TODO.md`
 - `VERSIONING.md`
+- `THREAT_MODEL.md`
