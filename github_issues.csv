@@ -1,0 +1,1321 @@
+title,body,labels
+"M0-01: Create repo skeleton with `src/`, `cli/`, `docs/`, `tests/`, `examples/`, `cpp/`, `schemas/`.","**Phase:** M0 — Foundation & Governance
+**Task ID:** M0-01
+
+**Description**
+Create repo skeleton with `src/`, `cli/`, `docs/`, `tests/`, `examples/`, `cpp/`, `schemas/`.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M0
+"M0-02: Add MIT license, CODE_OF_CONDUCT, SECURITY.md, CONTRIBUTING.md.","**Phase:** M0 — Foundation & Governance
+**Task ID:** M0-02
+
+**Description**
+Add MIT license, CODE_OF_CONDUCT, SECURITY.md, CONTRIBUTING.md.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M0
+M0-03: Define versioning strategy (SemVer + schema versioning).,"**Phase:** M0 — Foundation & Governance
+**Task ID:** M0-03
+
+**Description**
+Define versioning strategy (SemVer + schema versioning).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M0
+"M0-04: Define threat model document (offline constraints, policy bypass risks).","**Phase:** M0 — Foundation & Governance
+**Task ID:** M0-04
+
+**Description**
+Define threat model document (offline constraints, policy bypass risks).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M0
+"M0-05: Add project glossary (target types, module, task, event, artifact).","**Phase:** M0 — Foundation & Governance
+**Task ID:** M0-05
+
+**Description**
+Add project glossary (target types, module, task, event, artifact).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M0
+"M0-06: Define compatibility policy for plugins (min core version, deprecation policy).","**Phase:** M0 — Foundation & Governance
+**Task ID:** M0-06
+
+**Description**
+Define compatibility policy for plugins (min core version, deprecation policy).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M0
+M0-07: Decide canonical config format (YAML + JSON).,"**Phase:** M0 — Foundation & Governance
+**Task ID:** M0-07
+
+**Description**
+Decide canonical config format (YAML + JSON).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M0
+"M0-08: Create “core contracts” doc (TaskSpec, Event, Finding, TargetProfile, Artifact).","**Phase:** M0 — Foundation & Governance
+**Task ID:** M0-08
+
+**Description**
+Create “core contracts” doc (TaskSpec, Event, Finding, TargetProfile, Artifact).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M0
+"M1-01: Define Event schema (type, timestamp, run_id, payload, provenance).","**Phase:** M1 — Schemas & Contracts
+**Task ID:** M1-01
+
+**Description**
+Define Event schema (type, timestamp, run_id, payload, provenance).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M1
+"M1-02: Define TaskSpec schema (module, objective, params, policy_context).","**Phase:** M1 — Schemas & Contracts
+**Task ID:** M1-02
+
+**Description**
+Define TaskSpec schema (module, objective, params, policy_context).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M1
+"M1-03: Define Finding schema baseline (id, title, severity, confidence, target refs, evidence refs, provenance, timestamps).","**Phase:** M1 — Schemas & Contracts
+**Task ID:** M1-03
+
+**Description**
+Define Finding schema baseline (id, title, severity, confidence, target refs, evidence refs, provenance, timestamps).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M1
+"M1-04: Define Artifact schema (path, checksum, mime, source, created_at).","**Phase:** M1 — Schemas & Contracts
+**Task ID:** M1-04
+
+**Description**
+Define Artifact schema (path, checksum, mime, source, created_at).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M1
+"M1-05: Define TargetProfile schema (type, inputs, scope, credentials, policy flags).","**Phase:** M1 — Schemas & Contracts
+**Task ID:** M1-05
+
+**Description**
+Define TargetProfile schema (type, inputs, scope, credentials, policy flags).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M1
+M1-06: Implement JSON schema validation for all core entities.,"**Phase:** M1 — Schemas & Contracts
+**Task ID:** M1-06
+
+**Description**
+Implement JSON schema validation for all core entities.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M1
+M1-07: Add schema version bump rules + migration strategy.,"**Phase:** M1 — Schemas & Contracts
+**Task ID:** M1-07
+
+**Description**
+Add schema version bump rules + migration strategy.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M1
+"M2-01: Build Event Bus interface (publish/subscribe, filters, backpressure).","**Phase:** M2 — Core Runtime Spine
+**Task ID:** M2-01
+
+**Description**
+Build Event Bus interface (publish/subscribe, filters, backpressure).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M2
+"M2-02: Implement Orchestrator run loop (task queue, state transitions).","**Phase:** M2 — Core Runtime Spine
+**Task ID:** M2-02
+
+**Description**
+Implement Orchestrator run loop (task queue, state transitions).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M2
+"M2-03: Implement Policy Engine skeleton (allowlist, dry‑run, approvals).","**Phase:** M2 — Core Runtime Spine
+**Task ID:** M2-03
+
+**Description**
+Implement Policy Engine skeleton (allowlist, dry‑run, approvals).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M2
+"M2-04: Build State Store interface (CRUD for targets, tasks, findings).","**Phase:** M2 — Core Runtime Spine
+**Task ID:** M2-04
+
+**Description**
+Build State Store interface (CRUD for targets, tasks, findings).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M2
+"M2-05: Build Artifact Store interface (write/read, checksums, retention).","**Phase:** M2 — Core Runtime Spine
+**Task ID:** M2-05
+
+**Description**
+Build Artifact Store interface (write/read, checksums, retention).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M2
+M2-06: Implement run lifecycle (init → run → finalize → report).,"**Phase:** M2 — Core Runtime Spine
+**Task ID:** M2-06
+
+**Description**
+Implement run lifecycle (init → run → finalize → report).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M2
+M2-07: Implement replay mechanism from `events.jsonl`.,"**Phase:** M2 — Core Runtime Spine
+**Task ID:** M2-07
+
+**Description**
+Implement replay mechanism from `events.jsonl`.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M2
+M2-08: Add audit log entry for every policy decision.,"**Phase:** M2 — Core Runtime Spine
+**Task ID:** M2-08
+
+**Description**
+Add audit log entry for every policy decision.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M2
+M3-01: Implement JSONL event log writer/reader.,"**Phase:** M3 — Storage & Persistence
+**Task ID:** M3-01
+
+**Description**
+Implement JSONL event log writer/reader.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M3
+M3-02: Implement SQLite state schema + migrations.,"**Phase:** M3 — Storage & Persistence
+**Task ID:** M3-02
+
+**Description**
+Implement SQLite state schema + migrations.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M3
+M3-03: Link events to state updates (projection logic).,"**Phase:** M3 — Storage & Persistence
+**Task ID:** M3-03
+
+**Description**
+Link events to state updates (projection logic).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M3
+M3-04: Build “run export” bundle (events + state + artifacts).,"**Phase:** M3 — Storage & Persistence
+**Task ID:** M3-04
+
+**Description**
+Build “run export” bundle (events + state + artifacts).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M3
+M3-05: Add artifact integrity validation (checksums + manifest).,"**Phase:** M3 — Storage & Persistence
+**Task ID:** M3-05
+
+**Description**
+Add artifact integrity validation (checksums + manifest).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M3
+"M3-06: Add query helpers (findings by severity, targets by type).","**Phase:** M3 — Storage & Persistence
+**Task ID:** M3-06
+
+**Description**
+Add query helpers (findings by severity, targets by type).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M3
+M4-01: Create `cpp/` with CMake build setup.,"**Phase:** M4 — C++ Core Required
+**Task ID:** M4-01
+
+**Description**
+Create `cpp/` with CMake build setup.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M4
+"M4-02: Define C++ core API boundaries (event emitter, task executor hooks).","**Phase:** M4 — C++ Core Required
+**Task ID:** M4-02
+
+**Description**
+Define C++ core API boundaries (event emitter, task executor hooks).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M4
+M4-03: Add pybind11 bindings to expose C++ core to Python.,"**Phase:** M4 — C++ Core Required
+**Task ID:** M4-03
+
+**Description**
+Add pybind11 bindings to expose C++ core to Python.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M4
+M4-04: Add build matrix for Linux + macOS.,"**Phase:** M4 — C++ Core Required
+**Task ID:** M4-04
+
+**Description**
+Add build matrix for Linux + macOS.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M4
+M4-05: Add CI build validation for C++ core.,"**Phase:** M4 — C++ Core Required
+**Task ID:** M4-05
+
+**Description**
+Add CI build validation for C++ core.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M4
+"M4-06: Implement at least one performance‑critical path in C++ (e.g., event buffer).","**Phase:** M4 — C++ Core Required
+**Task ID:** M4-06
+
+**Description**
+Implement at least one performance‑critical path in C++ (e.g., event buffer).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M4
+"M5-01: Define plugin manifest schema (name, version, tier, targets, policies).","**Phase:** M5 — Plugin System
+**Task ID:** M5-01
+
+**Description**
+Define plugin manifest schema (name, version, tier, targets, policies).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M5
+M5-02: Implement Python entrypoint discovery.,"**Phase:** M5 — Plugin System
+**Task ID:** M5-02
+
+**Description**
+Implement Python entrypoint discovery.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M5
+M5-03: Implement manifest validation and compatibility checks.,"**Phase:** M5 — Plugin System
+**Task ID:** M5-03
+
+**Description**
+Implement manifest validation and compatibility checks.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M5
+M5-04: Implement trust levels (Core/Verified/Third‑party).,"**Phase:** M5 — Plugin System
+**Task ID:** M5-04
+
+**Description**
+Implement trust levels (Core/Verified/Third‑party).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M5
+M5-05: Implement capability tier gating (Tier 0/1/2).,"**Phase:** M5 — Plugin System
+**Task ID:** M5-05
+
+**Description**
+Implement capability tier gating (Tier 0/1/2).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M5
+"M5-06: Add sandboxing hooks (process isolation, resource limits).","**Phase:** M5 — Plugin System
+**Task ID:** M5-06
+
+**Description**
+Add sandboxing hooks (process isolation, resource limits).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M5
+M5-07: Add plugin registry index (local file‑based).,"**Phase:** M5 — Plugin System
+**Task ID:** M5-07
+
+**Description**
+Add plugin registry index (local file‑based).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M5
+M6-01: `shellscribe project init` (scaffold config and folders).,"**Phase:** M6 — CLI (Reference Client)
+**Task ID:** M6-01
+
+**Description**
+`shellscribe project init` (scaffold config and folders).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M6
+M6-02: `shellscribe config set/get` (YAML/JSON config support).,"**Phase:** M6 — CLI (Reference Client)
+**Task ID:** M6-02
+
+**Description**
+`shellscribe config set/get` (YAML/JSON config support).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M6
+M6-03: `shellscribe policy allowlist add/remove/list`.,"**Phase:** M6 — CLI (Reference Client)
+**Task ID:** M6-03
+
+**Description**
+`shellscribe policy allowlist add/remove/list`.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M6
+M6-04: `shellscribe run scenario <name>` (policy‑gated).,"**Phase:** M6 — CLI (Reference Client)
+**Task ID:** M6-04
+
+**Description**
+`shellscribe run scenario <name>` (policy‑gated).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M6
+M6-05: `shellscribe replay <run_id>`.,"**Phase:** M6 — CLI (Reference Client)
+**Task ID:** M6-05
+
+**Description**
+`shellscribe replay <run_id>`.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M6
+M6-06: `shellscribe report <run_id> --format md|json`.,"**Phase:** M6 — CLI (Reference Client)
+**Task ID:** M6-06
+
+**Description**
+`shellscribe report <run_id> --format md|json`.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M6
+M6-07: `shellscribe plugins list|enable|disable`.,"**Phase:** M6 — CLI (Reference Client)
+**Task ID:** M6-07
+
+**Description**
+`shellscribe plugins list|enable|disable`.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M6
+M6-08: Add interactive approval prompts (lab mode toggle).,"**Phase:** M6 — CLI (Reference Client)
+**Task ID:** M6-08
+
+**Description**
+Add interactive approval prompts (lab mode toggle).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M6
+M7-01: Implement llama.cpp runtime adapter (offline GGUF).,"**Phase:** M7 — LLM Integration
+**Task ID:** M7-01
+
+**Description**
+Implement llama.cpp runtime adapter (offline GGUF).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M7
+M7-02: Implement HF Transformers adapter (offline weights).,"**Phase:** M7 — LLM Integration
+**Task ID:** M7-02
+
+**Description**
+Implement HF Transformers adapter (offline weights).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M7
+M7-03: Build prompt pipeline engine (planner → translator → verifier → summarizer).,"**Phase:** M7 — LLM Integration
+**Task ID:** M7-03
+
+**Description**
+Build prompt pipeline engine (planner → translator → verifier → summarizer).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M7
+M7-04: Build context/memory store (short‑term + long‑term summaries).,"**Phase:** M7 — LLM Integration
+**Task ID:** M7-04
+
+**Description**
+Build context/memory store (short‑term + long‑term summaries).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M7
+M7-05: Add safety verifier to enforce policy alignment.,"**Phase:** M7 — LLM Integration
+**Task ID:** M7-05
+
+**Description**
+Add safety verifier to enforce policy alignment.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M7
+M7-06: Add prompt pack system (versioned templates).,"**Phase:** M7 — LLM Integration
+**Task ID:** M7-06
+
+**Description**
+Add prompt pack system (versioned templates).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M7
+M7-07: Add offline model registry + config validation.,"**Phase:** M7 — LLM Integration
+**Task ID:** M7-07
+
+**Description**
+Add offline model registry + config validation.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M7
+M8-01: Report Ingestion module (Markdown + JSON first).,"**Phase:** M8 — Report‑Driven Pentest Mode
+**Task ID:** M8-01
+
+**Description**
+Report Ingestion module (Markdown + JSON first).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M8
+M8-02: Report normalization into structured scope + findings.,"**Phase:** M8 — Report‑Driven Pentest Mode
+**Task ID:** M8-02
+
+**Description**
+Report normalization into structured scope + findings.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M8
+"M8-03: LLM gap analysis (coverage gaps, unclear evidence).","**Phase:** M8 — Report‑Driven Pentest Mode
+**Task ID:** M8-03
+
+**Description**
+LLM gap analysis (coverage gaps, unclear evidence).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M8
+M8-04: LLM plan synthesis (tasks only).,"**Phase:** M8 — Report‑Driven Pentest Mode
+**Task ID:** M8-04
+
+**Description**
+LLM plan synthesis (tasks only).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M8
+M8-05: Evidence consistency checker (no unsupported claims).,"**Phase:** M8 — Report‑Driven Pentest Mode
+**Task ID:** M8-05
+
+**Description**
+Evidence consistency checker (no unsupported claims).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M8
+"M8-06: Report composer (evidence‑bound, templated).","**Phase:** M8 — Report‑Driven Pentest Mode
+**Task ID:** M8-06
+
+**Description**
+Report composer (evidence‑bound, templated).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M8
+M8-07: Add “delta report” mode vs prior report.,"**Phase:** M8 — Report‑Driven Pentest Mode
+**Task ID:** M8-07
+
+**Description**
+Add “delta report” mode vs prior report.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M8
+M9-01: Recon module skeleton (asset/service normalization).,"**Phase:** M9 — Core Modules (Baseline)
+**Task ID:** M9-01
+
+**Description**
+Recon module skeleton (asset/service normalization).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M9
+"M9-02: Fuzzing module skeleton (lab‑safe, controlled).","**Phase:** M9 — Core Modules (Baseline)
+**Task ID:** M9-02
+
+**Description**
+Fuzzing module skeleton (lab‑safe, controlled).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M9
+"M9-03: Exploit scaffold module (research notes only, non‑operational).","**Phase:** M9 — Core Modules (Baseline)
+**Task ID:** M9-03
+
+**Description**
+Exploit scaffold module (research notes only, non‑operational).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M9
+M9-04: Emulation/scenario engine (technique graphs + checkpoints).,"**Phase:** M9 — Core Modules (Baseline)
+**Task ID:** M9-04
+
+**Description**
+Emulation/scenario engine (technique graphs + checkpoints).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M9
+"M9-05: Reporting module (MD + JSON output, evidence bundling).","**Phase:** M9 — Core Modules (Baseline)
+**Task ID:** M9-05
+
+**Description**
+Reporting module (MD + JSON output, evidence bundling).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M9
+M9-06: Add module capability declarations (target types + inputs).,"**Phase:** M9 — Core Modules (Baseline)
+**Task ID:** M9-06
+
+**Description**
+Add module capability declarations (target types + inputs).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M9
+M9-07: Add module‑level resource limits (CPU/mem/time).,"**Phase:** M9 — Core Modules (Baseline)
+**Task ID:** M9-07
+
+**Description**
+Add module‑level resource limits (CPU/mem/time).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M9
+M10-01: Asset Inventory module (normalize all targets into graph).,"**Phase:** M10 — Pentest‑Focused Module Pack
+**Task ID:** M10-01
+
+**Description**
+Asset Inventory module (normalize all targets into graph).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M10
+M10-02: Service Fingerprint module (passive metadata).,"**Phase:** M10 — Pentest‑Focused Module Pack
+**Task ID:** M10-02
+
+**Description**
+Service Fingerprint module (passive metadata).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M10
+M10-03: Web/App Mapper module (routes/params inventory).,"**Phase:** M10 — Pentest‑Focused Module Pack
+**Task ID:** M10-03
+
+**Description**
+Web/App Mapper module (routes/params inventory).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M10
+M10-04: API Surface Mapper module (OpenAPI ingestion).,"**Phase:** M10 — Pentest‑Focused Module Pack
+**Task ID:** M10-04
+
+**Description**
+API Surface Mapper module (OpenAPI ingestion).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M10
+M10-05: Config Posture module (TLS/headers/safe defaults).,"**Phase:** M10 — Pentest‑Focused Module Pack
+**Task ID:** M10-05
+
+**Description**
+Config Posture module (TLS/headers/safe defaults).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M10
+M10-06: Auth Flow Analyzer module (session/token lifecycle modeling).,"**Phase:** M10 — Pentest‑Focused Module Pack
+**Task ID:** M10-06
+
+**Description**
+Auth Flow Analyzer module (session/token lifecycle modeling).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M10
+M10-07: Role/Permission Graph module (policy mapping).,"**Phase:** M10 — Pentest‑Focused Module Pack
+**Task ID:** M10-07
+
+**Description**
+Role/Permission Graph module (policy mapping).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M10
+"M10-08: Input Robustness module (boundary/type checks, non‑destructive).","**Phase:** M10 — Pentest‑Focused Module Pack
+**Task ID:** M10-08
+
+**Description**
+Input Robustness module (boundary/type checks, non‑destructive).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M10
+M10-09: Evidence Bundler module (consistent artifact packaging).,"**Phase:** M10 — Pentest‑Focused Module Pack
+**Task ID:** M10-09
+
+**Description**
+Evidence Bundler module (consistent artifact packaging).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M10
+M10-10: Redaction module (sanitize sensitive artifacts).,"**Phase:** M10 — Pentest‑Focused Module Pack
+**Task ID:** M10-10
+
+**Description**
+Redaction module (sanitize sensitive artifacts).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M10
+M10-11: Finding Correlator module (dedupe + merge related signals).,"**Phase:** M10 — Pentest‑Focused Module Pack
+**Task ID:** M10-11
+
+**Description**
+Finding Correlator module (dedupe + merge related signals).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M10
+M11-01: Crash clustering pipeline (signature + similarity).,"**Phase:** M11 — ML Utilities
+**Task ID:** M11-01
+
+**Description**
+Crash clustering pipeline (signature + similarity).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M11
+M11-02: Finding ranking (risk + confidence + relevance).,"**Phase:** M11 — ML Utilities
+**Task ID:** M11-02
+
+**Description**
+Finding ranking (risk + confidence + relevance).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M11
+M11-03: Anomaly detector for telemetry (lab‑only).,"**Phase:** M11 — ML Utilities
+**Task ID:** M11-03
+
+**Description**
+Anomaly detector for telemetry (lab‑only).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M11
+M11-04: ML output events + state updates.,"**Phase:** M11 — ML Utilities
+**Task ID:** M11-04
+
+**Description**
+ML output events + state updates.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M11
+M11-05: ML evaluation harness (precision/recall on sample data).,"**Phase:** M11 — ML Utilities
+**Task ID:** M11-05
+
+**Description**
+ML evaluation harness (precision/recall on sample data).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M11
+M12-01: Offline enforcement (deny network unless explicitly enabled).,"**Phase:** M12 — Safety & Policy Hardening
+**Task ID:** M12-01
+
+**Description**
+Offline enforcement (deny network unless explicitly enabled).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M12
+"M12-02: Policy profiles (lab, strict, audit‑only).","**Phase:** M12 — Safety & Policy Hardening
+**Task ID:** M12-02
+
+**Description**
+Policy profiles (lab, strict, audit‑only).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M12
+"M12-03: Approval policies (auto‑approve in lab, manual elsewhere).","**Phase:** M12 — Safety & Policy Hardening
+**Task ID:** M12-03
+
+**Description**
+Approval policies (auto‑approve in lab, manual elsewhere).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M12
+M12-04: Audit trail for every action.,"**Phase:** M12 — Safety & Policy Hardening
+**Task ID:** M12-04
+
+**Description**
+Audit trail for every action.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M12
+M12-05: Evidence provenance enforcement (all findings must reference artifacts).,"**Phase:** M12 — Safety & Policy Hardening
+**Task ID:** M12-05
+
+**Description**
+Evidence provenance enforcement (all findings must reference artifacts).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M12
+M13-01: Timeline view (events + approvals).,"**Phase:** M13 — UI (Optional, Local)
+**Task ID:** M13-01
+
+**Description**
+Timeline view (events + approvals).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M13
+M13-02: Task graph view (scenario steps).,"**Phase:** M13 — UI (Optional, Local)
+**Task ID:** M13-02
+
+**Description**
+Task graph view (scenario steps).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M13
+M13-03: Findings + evidence viewer.,"**Phase:** M13 — UI (Optional, Local)
+**Task ID:** M13-03
+
+**Description**
+Findings + evidence viewer.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M13
+"M13-04: Policy status panel (offline, allowlist, approvals).","**Phase:** M13 — UI (Optional, Local)
+**Task ID:** M13-04
+
+**Description**
+Policy status panel (offline, allowlist, approvals).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M13
+M13-05: UI uses same APIs; no bypass paths.,"**Phase:** M13 — UI (Optional, Local)
+**Task ID:** M13-05
+
+**Description**
+UI uses same APIs; no bypass paths.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M13
+M14-01: Agent pool manager (local cluster).,"**Phase:** M14 — Distributed Offline Execution (Future)
+**Task ID:** M14-01
+
+**Description**
+Agent pool manager (local cluster).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M14
+M14-02: Work queue + scheduling policy.,"**Phase:** M14 — Distributed Offline Execution (Future)
+**Task ID:** M14-02
+
+**Description**
+Work queue + scheduling policy.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M14
+M14-03: Shared artifact storage interface.,"**Phase:** M14 — Distributed Offline Execution (Future)
+**Task ID:** M14-03
+
+**Description**
+Shared artifact storage interface.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M14
+M14-04: Deterministic replay across nodes.,"**Phase:** M14 — Distributed Offline Execution (Future)
+**Task ID:** M14-04
+
+**Description**
+Deterministic replay across nodes.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M14
+M14-05: Cross‑node policy enforcement.,"**Phase:** M14 — Distributed Offline Execution (Future)
+**Task ID:** M14-05
+
+**Description**
+Cross‑node policy enforcement.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M14
+M15-01: Unit tests for policy + schemas.,"**Phase:** M15 — Testing & CI
+**Task ID:** M15-01
+
+**Description**
+Unit tests for policy + schemas.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M15
+M15-02: Unit tests for prompt pipelines + adapters.,"**Phase:** M15 — Testing & CI
+**Task ID:** M15-02
+
+**Description**
+Unit tests for prompt pipelines + adapters.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M15
+M15-03: Integration tests for end‑to‑end run.,"**Phase:** M15 — Testing & CI
+**Task ID:** M15-03
+
+**Description**
+Integration tests for end‑to‑end run.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M15
+M15-04: Replay determinism tests.,"**Phase:** M15 — Testing & CI
+**Task ID:** M15-04
+
+**Description**
+Replay determinism tests.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M15
+M15-05: Offline enforcement tests (no outbound calls).,"**Phase:** M15 — Testing & CI
+**Task ID:** M15-05
+
+**Description**
+Offline enforcement tests (no outbound calls).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M15
+M15-06: Plugin compatibility tests.,"**Phase:** M15 — Testing & CI
+**Task ID:** M15-06
+
+**Description**
+Plugin compatibility tests.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M15
+M15-07: C++ core build tests (Linux + macOS).,"**Phase:** M15 — Testing & CI
+**Task ID:** M15-07
+
+**Description**
+C++ core build tests (Linux + macOS).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M15
+M15-08: Golden run fixtures with expected outputs.,"**Phase:** M15 — Testing & CI
+**Task ID:** M15-08
+
+**Description**
+Golden run fixtures with expected outputs.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M15
+M16-01: Quickstart guide (offline setup).,"**Phase:** M16 — Docs & Examples
+**Task ID:** M16-01
+
+**Description**
+Quickstart guide (offline setup).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M16
+"M16-02: Target Profile guide (codebase, web, API, mobile).","**Phase:** M16 — Docs & Examples
+**Task ID:** M16-02
+
+**Description**
+Target Profile guide (codebase, web, API, mobile).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M16
+M16-03: Plugin authoring guide (manifest + capability tiers).,"**Phase:** M16 — Docs & Examples
+**Task ID:** M16-03
+
+**Description**
+Plugin authoring guide (manifest + capability tiers).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M16
+M16-04: Policy configuration guide.,"**Phase:** M16 — Docs & Examples
+**Task ID:** M16-04
+
+**Description**
+Policy configuration guide.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M16
+M16-05: Report templates + schema docs.,"**Phase:** M16 — Docs & Examples
+**Task ID:** M16-05
+
+**Description**
+Report templates + schema docs.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M16
+M16-06: Example scenarios and sample reports.,"**Phase:** M16 — Docs & Examples
+**Task ID:** M16-06
+
+**Description**
+Example scenarios and sample reports.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M16
+M17-01: Packaging strategy (PyPI + native wheels).,"**Phase:** M17 — Release Engineering
+**Task ID:** M17-01
+
+**Description**
+Packaging strategy (PyPI + native wheels).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M17
+M17-02: Versioned migration scripts for SQLite schema.,"**Phase:** M17 — Release Engineering
+**Task ID:** M17-02
+
+**Description**
+Versioned migration scripts for SQLite schema.
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M17
+"M17-03: Release checklist (tests, docs, compatibility).","**Phase:** M17 — Release Engineering
+**Task ID:** M17-03
+
+**Description**
+Release checklist (tests, docs, compatibility).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M17
+M17-04: Artifact signing policy (optional).,"**Phase:** M17 — Release Engineering
+**Task ID:** M17-04
+
+**Description**
+Artifact signing policy (optional).
+
+**Checklist**
+- [ ] Implement
+- [ ] Tests
+- [ ] Docs
+",phase:M17
