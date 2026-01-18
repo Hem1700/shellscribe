@@ -8,3 +8,4 @@ Primary documents live at repo root:
 - `THREAT_MODEL.md`
 - `GLOSSARY.md`
 - `PLUGIN_COMPATIBILITY.md`
+- `CONFIG_FORMAT.md`
