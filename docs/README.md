@@ -9,3 +9,4 @@ Primary documents live at repo root:
 - `GLOSSARY.md`
 - `PLUGIN_COMPATIBILITY.md`
 - `CONFIG_FORMAT.md`
+- `CORE_CONTRACTS.md`
