@@ -3,10 +3,60 @@
   "title": "TaskSpec",
   "type": "object",
   "properties": {
-    "module": {"type": "string"},
-    "objective": {"type": "string"},
-    "params": {"type": "object"},
-    "policy_context": {"type": "object"}
+    "schema_id": { "const": "task" },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-[0-9A-Za-z.-]+)?(?:\\+[0-9A-Za-z.-]+)?$"
+    },
+    "task_id": { "type": "string", "minLength": 1 },
+    "module": { "type": "string", "minLength": 1 },
+    "objective": { "type": "string", "minLength": 1 },
+    "params": { "type": "object", "additionalProperties": true },
+    "policy_context": { "$ref": "#/$defs/policy_context" },
+    "target_ref": { "type": "string", "minLength": 1 },
+    "created_at": { "type": "string", "format": "date-time" },
+    "requested_by": { "type": "string" },
+    "priority": { "type": "integer", "minimum": 0, "maximum": 5 },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    }
   },
-  "required": ["module", "objective"]
+  "required": [
+    "schema_id",
+    "schema_version",
+    "task_id",
+    "module",
+    "objective",
+    "params",
+    "policy_context",
+    "target_ref",
+    "created_at"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "policy_context": {
+      "type": "object",
+      "properties": {
+        "mode": { "type": "string" },
+        "allow_exec": { "type": "boolean" },
+        "allow_network": { "type": "boolean" },
+        "allow_fs": { "type": "boolean" },
+        "allow_write": { "type": "boolean" },
+        "allow_plugins": { "type": "boolean" },
+        "allow_model": { "type": "boolean" },
+        "time_budget_sec": { "type": "integer", "minimum": 0 },
+        "memory_limit_mb": { "type": "integer", "minimum": 0 },
+        "storage_budget_mb": { "type": "integer", "minimum": 0 },
+        "scope_ref": { "type": "string" },
+        "requires_hil": { "type": "boolean" },
+        "approvals": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": true
+    }
+  }
 }
