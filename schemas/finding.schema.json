@@ -3,15 +3,120 @@
   "title": "Finding",
   "type": "object",
   "properties": {
-    "id": {"type": "string"},
-    "title": {"type": "string"},
-    "severity": {"type": "string"},
-    "confidence": {"type": "string"},
-    "targets": {"type": "array"},
-    "evidence": {"type": "array"},
-    "provenance": {"type": "object"},
-    "timestamps": {"type": "object"},
-    "metadata": {"type": "object"}
+    "schema_id": { "const": "finding" },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-[0-9A-Za-z.-]+)?(?:\\+[0-9A-Za-z.-]+)?$"
+    },
+
+    "finding_id": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "severity": {
+      "type": "string",
+      "enum": ["info", "low", "medium", "high", "critical"]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+
+    "description": { "type": "string", "minLength": 1 },
+    "impact": { "type": "string" },
+    "likelihood": { "type": "string" },
+    "remediation": { "type": "string", "minLength": 1 },
+
+    "target_refs": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+
+    "affected_components": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "path": { "type": "string" },
+        "line": { "type": "integer", "minimum": 1 },
+        "column": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
+    },
+
+    "cwe": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "cve": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "cvss": {
+      "type": "object",
+      "properties": {
+        "score": { "type": "number", "minimum": 0, "maximum": 10 },
+        "vector": { "type": "string" },
+        "version": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+
+    "references": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+
+    "status": {
+      "type": "string",
+      "enum": ["open", "accepted", "mitigated", "false_positive", "informational"]
+    },
+    "risk_score": { "type": "number", "minimum": 0, "maximum": 10 },
+
+    "provenance": { "$ref": "#/$defs/provenance" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "updated_at": { "type": "string", "format": "date-time" },
+
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    }
   },
-  "required": ["id", "title", "severity", "confidence", "evidence"]
+  "required": [
+    "schema_id",
+    "schema_version",
+    "finding_id",
+    "title",
+    "severity",
+    "confidence",
+    "description",
+    "remediation",
+    "target_refs",
+    "provenance",
+    "created_at"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "source": { "type": "string" },
+        "actor": { "type": "string" },
+        "tool": { "type": "string" },
+        "model": { "type": "string" },
+        "module": { "type": "string" },
+        "plugin": { "type": "string" },
+        "host": { "type": "string" },
+        "version": { "type": "string" },
+        "task_id": { "type": "string" },
+        "event_id": { "type": "string" }
+      }
+    }
+  }
 }
