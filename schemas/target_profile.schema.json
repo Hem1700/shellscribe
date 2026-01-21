@@ -3,10 +3,60 @@
   "title": "TargetProfile",
   "type": "object",
   "properties": {
-    "type": {"type": "string"},
-    "inputs": {"type": "object"},
-    "scope": {"type": "object"},
-    "credentials": {"type": "object"}
+    "schema_id": { "const": "target_profile" },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-[0-9A-Za-z.-]+)?(?:\\+[0-9A-Za-z.-]+)?$"
+    },
+
+    "target_id": { "type": "string", "minLength": 1 },
+    "type": { "type": "string", "minLength": 1 },
+    "inputs": { "type": "object", "additionalProperties": true },
+    "scope": { "$ref": "#/$defs/scope" },
+    "credentials": { "type": "object", "additionalProperties": true },
+    "policy_flags": { "$ref": "#/$defs/policy_flags" },
+
+    "owner": { "type": "string" },
+    "notes": { "type": "string" },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+
+    "created_at": { "type": "string", "format": "date-time" }
   },
-  "required": ["type", "inputs"]
+  "required": [
+    "schema_id",
+    "schema_version",
+    "target_id",
+    "type",
+    "inputs",
+    "scope",
+    "created_at"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "scope": {
+      "type": "object",
+      "properties": {
+        "include": { "type": "array", "items": { "type": "string" } },
+        "exclude": { "type": "array", "items": { "type": "string" } },
+        "paths": { "type": "array", "items": { "type": "string" } },
+        "network": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "policy_flags": {
+      "type": "object",
+      "properties": {
+        "lab_mode": { "type": "boolean" },
+        "aggressive": { "type": "boolean" },
+        "hil_required": { "type": "boolean" },
+        "allow_network": { "type": "boolean" },
+        "allow_exec": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    }
+  }
 }
